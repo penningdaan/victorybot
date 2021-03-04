@@ -1,0 +1,9 @@
+{
+    "package": "moderation",
+    "commands": {
+        "purge": {
+            "desc": "Removes a certain number of messages from this text channel.",
+            "arguments": ["Number of messages"]
+        }
+    }
+}

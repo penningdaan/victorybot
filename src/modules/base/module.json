@@ -1,0 +1,12 @@
+{
+    "package": "base",
+    "commands": {
+        "test": {
+            "arguments": [],
+            "desc": "Tests the bot."
+        },
+        "vo": {
+            "desc": "You know what this does...."
+        }
+    }
+}

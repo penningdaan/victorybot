@@ -1,0 +1,12 @@
+{
+    "package": "gameinfo",
+    "commands": {
+        "ow": {
+            "desc": "Get info about your Overwatch account.\n\ninfo can be one of the following modes:\ngeneral: Info like playtime, total wins, etc.\ncomp: Information about competitive.",
+            "arguments": ["user id", "info"]
+        },
+        "ow-setme": {
+            "desc": "Sets your default Overwatch account. Use 'ow @me [type]' to use your default account."
+        }
+    }
+}
