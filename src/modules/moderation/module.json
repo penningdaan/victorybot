@@ -4,6 +4,10 @@
         "purge": {
             "desc": "Removes a certain number of messages from this text channel.",
             "arguments": ["Number of messages"]
-        }
+        },
+        "purgeuser": {
+            "desc": "Removes a certain number of messages from this text channel of a specific user.",
+            "arguments": ["User mention", "Number of messages"]
+        } 
     }
 }

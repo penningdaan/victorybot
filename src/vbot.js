@@ -36,6 +36,11 @@ module.exports = class Vbot {
     // TODO: COMMENT
     userData = {}
 
+    // Color schemes:
+    colorSchemes = {
+        primary: [146,197,80]
+    }
+
     // Gets a piece of data from a specific guild
     getGuildData(guildID, dataID) {
         if(this.guildData[guildID]) {
@@ -113,7 +118,7 @@ module.exports = class Vbot {
                                 helpEmbed.setTitle(`Help Menu - Page ${id+1}/${Math.ceil(allCommands.length/pageSize)}`)
                                 helpEmbed.setDescription('Full list of commands that can be used with Victory bot.')
                                 helpEmbed.setFooter('(c) Victory Bot')
-                                helpEmbed.setColor([235,64,52])
+                                helpEmbed.setColor(__self.colorSchemes.primary)
                             
                                 allCommands.slice(pageSize * id, pageSize * id + pageSize).forEach(k => {
                                     let args = __self.loadedCommands[k]['arguments']
