@@ -1,0 +1,9 @@
+{
+    "package": "nice",
+    "commands": {
+        "summon": {
+            "arguments": ["mention of a user"],
+            "desc": "Summons a user to this call."
+        }
+    }
+}

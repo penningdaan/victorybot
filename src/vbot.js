@@ -81,8 +81,8 @@ module.exports = class Vbot {
      * @param {Vbot} __self
      */
     __eventOnMessage(message, __self) {
-        if(message.author.id != __self.Client.user.id) {
-            let guild = message.guild.id
+        if(message.author.id != __self.Client.user.id && message.channel.type != 'dm') {
+            let guild = message.guild["id"]
             let usePrefix = '.'
             let messageContent = message.content
 
